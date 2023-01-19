@@ -1,11 +1,21 @@
-## 曲线的凹凸性、拐点及渐近线
 
-1.   设函数$f(x)$具有二阶导数，$g(x)=f(0)(1-x) +f(1)x$，则在区间$[0,1]$（）
 
-     $(A)\ f_1(x) \leq f_2(x) \leq g(x)\quad \quad (B)\ f_2(x) \leq f_1(x) \leq g(x).$
+## 极限
 
-     $(C)\ f_1(x) \leq g(x) \leq f_2(x)\quad \quad (D)\ f_2(x) \leq g(x) \leq f_1(x).$
+1.   求$f(x) = \frac{|ln|x||}{x^2-1}$的间断点
 
-     解析：
+     **间断点：**$0, \pm1$
 
-     $$K = \frac{|f''(x)|}{(1+f'(x))^{\frac{3}{2}}}\\ \lim\limits_{x\to x_0}f_i''(x) = f_i''(x_0) < 0$$
+     $\lim\limits_{x \to 0}f(x) = \frac{+\infty}{-1} = -\infty$
+
+     $\lim\limits_{x \to 1^+}f(x) = \lim\limits_{x \to 1^+}\frac{\ln x}{(x+1)(x-1)} =\lim\limits_{x\to 1^+}\frac{1}{x+1} \cdot \frac{\ln\left[1+(x-1)\right]}{(x-1)} = \frac{1}{2}$
+
+     $\lim\limits_{x \to 1^-}f(x) = -\lim\limits_{x \to 1^-}\frac{\ln x}{(x+1)(x-1)} =-\lim\limits_{x\to 1^-}\frac{1}{x+1} \cdot \frac{\ln\left[1+(x-1)\right]}{(x-1)} = -\frac{1}{2}$
+
+     $\lim\limits_{x \to 1^+}f(x) = \lim\limits_{x \to 0}\frac{\ln x}{(x+1)(x-1)} =\lim\limits_{x\to 1^+}\frac{1}{x+1} \cdot \frac{\ln\left[1+(x-1)\right]}{(x-1)} = \frac{1}{2}$
+
+     $\lim\limits_{x \to -1^-}f(x) = \lim\limits_{x \to -1^+}\frac{-\ln (-x)}{(x+1)(x-1)} =-\lim\limits_{x\to -1^+}\frac{1}{x-1} \cdot \frac{\ln\left[1-(x+1)\right]}{(x+1)} = -\frac{1}{2}$
+
+     $\lim\limits_{x \to -1^-}f(x) = \lim\limits_{x \to -1^-}\frac{\ln (-x)}{(x+1)(x-1)} =\lim\limits_{x\to -1^-}\frac{1}{x-1} \cdot \frac{\ln\left[1-(x+1)\right]}{(x+1)} = \frac{1}{2}$
+
+     $\therefore \pm1是跳跃间断点，0是无穷间断点$
